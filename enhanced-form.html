@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form Assignment</title>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Content & Form</h1>
+    <p>This page demonstrates the use of lists, tables, media, and a complete HTML5 form with validation features.</p>
+  </header>
+
+  <main>
+    <!-- Section 1: Lists -->
+    <section>
+      <h2>Popular Web Technologies</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+      </ul>
+
+      <h3>Steps to Build a Web Page</h3>
+      <ol>
+        <li>Plan the structure</li>
+        <li>Write semantic HTML</li>
+        <li>Style with CSS</li>
+        <li>Add interactivity with JavaScript</li>
+      </ol>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section>
+      <h2>Course Schedule</h2>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML5 Basics</td>
+            <td>2 hours</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>CSS Styling</td>
+            <td>3 hours</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Forms & Validation</td>
+            <td>2 hours</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+      <h2>Media Examples</h2>
+      <p>Below are some media elements:</p>
+
+      <figure>
+        <img src="images\Screenshot 2025-08-06 192620.png" alt="Placeholder image">
+        <figcaption>A sample image.</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video width="320" height="180" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Section 4: Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="18" max="99" required><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" placeholder="Min 6 characters"><br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="color">Favorite Color:</label>
+          <input type="color" id="color" name="color"><br><br>
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="gh">Ghana</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+          </select><br><br>
+
+          <p>Subscribe to newsletter?</p>
+          <input type="radio" id="yes" name="newsletter" value="yes" required>
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="newsletter" value="no">
+          <label for="no">No</label><br><br>
+
+          <label for="comments">Comments:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter your comments here"></textarea><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Assignment</p>
+  </footer>
+</body>
+</html>
